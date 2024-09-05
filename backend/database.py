@@ -44,7 +44,7 @@ class JobPost(Base):
     url = Column(String, nullable=True)
 
     source_board = relationship("JobBoards", back_populates="job_postings")
-    source-saved = relationship("SavedJobs", back_populates="saved_job")
+    source_saved = relationship("SavedJobs", back_populates="saved_job")
 
 class JobBoard(Base):
     __tablename__ = 'JobBoards'
