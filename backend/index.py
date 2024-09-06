@@ -7,6 +7,6 @@ from database import User, Session
 
 session = Session()
 
-new_user = User(first_name='Sandy', last_name='Obatula', email='sandy@gmail.com', password_hash='cool-password')
+new_user = User(first_name='Sandy', last_name='Obatula', email='sand@gmail.com', password_hash='cool-password')
 session.add(new_user)
 session.commit()
